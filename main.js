@@ -1,9 +1,4 @@
-//Create Tic Tac Toe game
-//9x9 Grid in HTMl using divs
-
-
-//let user input Xs or Os into the squares
-//--make box clickable
+//Global Variables
 const playFunc = document.querySelectorAll('.box')
 let playerInput = 0;
 let turnCount = 0;
@@ -16,8 +11,9 @@ for (let i = 0; i < playFunc.length; i++) {
 }
 
 
-//--once clicked make X or O appear in the box
+//Functions
 
+//--Game Logic
 function game(event) {
 
     console.log(event.target);
@@ -27,12 +23,10 @@ function game(event) {
         if (playerInput === 1) {
             event.target.innerText = 'O'
             playerInput = 0;
-            turnCount + 1
         } else if (playerInput === 0) {
 
             event.target.innerText = 'X'
             playerInput = 1;
-            turnCount + 1
         }
     } else {
 
@@ -41,13 +35,17 @@ function game(event) {
 
     winConditions()
 
-    if (turnCount === 9) {
+    /* Dont Work ATM
+        if (turnCount === 9) {
+    
+            prompt('its a draw')
+            resetGrid();
+        }*/
 
-        prompt('its a draw')
-        resetGrid();
-    }
 }
 
+
+//--Win Conditions
 function winConditions() {
 
     if (document.querySelector('.box-1').innerText === 'X' && document.querySelector('.box-2').innerText === 'X' && document.querySelector('.box-3').innerText === 'X') {
@@ -110,10 +108,16 @@ function winConditions() {
 
         alert('Player Two Wins!')
         resetGrid();
+    } else if (document.querySelector('.box-2').innerText === 'O' && document.querySelector('.box-5').innerText === 'O' && document.querySelector('.box-7').innerText === 'O') {
+
+        alert('Player Two Wins!')
+        resetGrid();
     }
+
 
 }
 
+//--Reset
 function resetGrid() {
     console.log("Test")
     document.querySelector('.box-1').innerText = "";
@@ -128,10 +132,4 @@ function resetGrid() {
     document.querySelector('.box-9').innerText = "";
 }
 
-//after 4 inputs check if there are 3 consectutive X or Os
-//--create function to check boxes
-//--
-
-
-/* Fucntions */
 
