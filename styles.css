@@ -23,31 +23,56 @@ p {
 .mainContent {
     max-width: 800px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr;
     margin: auto;
     gap: 30px;
 }
 
 #grid {
-    max-width: 600px;
+    max-width: 800px;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
 }
 
-.playerInfo {
-    background-color: white;
-    height: 150px;
+div {
+    border: 2px solid #D41158;
+    height: 200px;
+    font-size: 150px;
     text-align: center;
-    border-radius: 10px;
+    color: white;
 }
 
-.playerInfo h2, .resetButton {
+.playerInfo {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    background-color: white;
+    height: 200px;
+    text-align: center;
+    border-radius: 5px;
+    gap: 5px;
+    border: none;
+    margin: auto;
+}
+
+.players {
+    border: none;
+    font-size: 13px;
+}
+
+.players h2, .resetButton {
     padding-left: 5px;
 }
 
-.playerInfo h2 {
+.players h2 {
+    
     margin-top: 15px;
     margin-bottom: 10px;
+}
+
+.scores {
+    font-size: 13px;
+    border: none;
 }
 
 .resetButton {
@@ -57,14 +82,6 @@ p {
     color: white;
     width: 60px;
     height: 30px;
-}
-
-div {
-    border: 2px solid #D41158;
-    height: 200px;
-    font-size: 150px;
-    text-align: center;
-    color: white;
 }
 
 .box-1, .box-4, .box-7 {
