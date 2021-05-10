@@ -147,7 +147,6 @@ function resetGrid() {
     document.querySelector('.box-7').innerText = "";
     document.querySelector('.box-8').innerText = "";
     document.querySelector('.box-9').innerText = "";
-    playerInput = 0;
     turnCount = 0;
 }
 
