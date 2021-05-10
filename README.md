@@ -47,7 +47,7 @@ After a bit of coding I had to change the order of things and originally wanted 
 # :bug: Known Bugs
 During Saturday's presentation there was a couple of bugs:
 
-Some win conditions werent working (Fixed)
+Some win conditions werent working(Fixed)
 Draw condition was not working (Fixed)
 
 The reset button wouldnt reset to Player 1's turn but decided to keep this to allow Player 2 to go first (Turned into a feature)
