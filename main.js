@@ -150,12 +150,14 @@ function resetGrid() {
     turnCount = 0;
 }
 
+//--updatePlayerOneScore func
 function updatePlayerOneScore() {
 
     document.querySelector('.playerOneWins').innerText = "Player 1 Wins: " + playerOneScore;
 
 }
 
+//--updatePlayerTwoScore func
 function updatePlayerTwoScore() {
 
     document.querySelector('.playerTwoWins').innerText = "Player 2 Wins: " + playerTwoScore;
